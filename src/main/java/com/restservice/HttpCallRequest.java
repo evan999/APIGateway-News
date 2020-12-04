@@ -25,11 +25,6 @@ public class HttpCallRequest {
             connection.setReadTimeout(5000);
 
             int status = connection.getResponseCode();
-
-            if(status > 200) {
-                reader = new BufferedReader(new InputStreamReader(connection.getErrorStream()))
-
-            }
         }
     }
 }
